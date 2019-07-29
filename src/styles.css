@@ -1,0 +1,34 @@
+body {
+  font-family: sans-serif;
+  background: #dedcdc;
+}
+.quiz-container {
+  /* background: gray; */
+  padding: 30px 15px;
+  width: 700px;
+  max-width: 80%;
+  margin: auto;
+  background: white;
+}
+.questions {
+  margin-bottom: 10px;
+}
+
+.btn {
+  padding: 5px 10px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  margin: 3px;
+  box-shadow: 0 0 7px 1px;
+}
+
+.hide {
+  display: none;
+}
+.next-question {
+  margin-top: 10px;
+}
+.show-right-wrong-container {
+  margin: 10px 0;
+}
