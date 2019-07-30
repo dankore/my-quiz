@@ -45,15 +45,16 @@ const show = () => {
     const button = document.createElement("input");
     button.type = "checkbox";
     button.id = "options";
-    const label = document.createElement("label");
+    const label = document.createElement("div");
     label.htmlFor = "options";
     label.appendChild(document.createTextNode(option.text));
     label.classList.add("label");
 
     button.classList.add("btn");
-    optionsHolder.appendChild(button);
+    button.classList.add("input");
+    label.appendChild(button);
     optionsHolder.appendChild(label);
-    console.log(option.correct);
+
     button.addEventListener("click", () => {
       const answer = option.correct;
       if (answer === true) {

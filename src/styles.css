@@ -37,8 +37,7 @@ body {
   margin-top: 60px;
   padding: 10px 0;
 }
-/* .next-question {
-} */
+
 .show-right-wrong-container {
   position: absolute;
   margin-left: 80%;
@@ -48,9 +47,13 @@ body {
   color: #6a797a;
   margin-bottom: 10px;
 }
-.options-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  left: 0;
-  float: left;
+.label {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 95%;
+  /* padding: 10px; */
+  color: red;
+}
+.input {
+  margin-right: 10px;
 }
