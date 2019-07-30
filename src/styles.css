@@ -3,15 +3,18 @@ body {
   background: #dedcdc;
 }
 .quiz-container {
-  /* background: gray; */
+  position: relative;
   padding: 30px 15px;
   width: 700px;
   max-width: 80%;
   margin: auto;
+  border-radius: 5px;
   background: white;
+  box-shadow: 0 0 3px 0 gray;
 }
 .questions {
   margin-bottom: 10px;
+  font-weight: 600px;
 }
 
 .btn {
@@ -26,9 +29,28 @@ body {
 .hide {
   display: none;
 }
-.next-question {
-  margin-top: 10px;
+.controls {
+  background: #6a797a;
+  display: flex;
+  margin-top: 3px;
+  justify-content: center;
+  margin-top: 60px;
+  padding: 10px 0;
 }
+/* .next-question {
+} */
 .show-right-wrong-container {
-  margin: 10px 0;
+  position: absolute;
+  margin-left: 80%;
+}
+.progress {
+  font-family: MalloryMP, Mallory, Verdana, sans-serif;
+  color: #6a797a;
+  margin-bottom: 10px;
+}
+.options-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  left: 0;
+  float: left;
 }
