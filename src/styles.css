@@ -49,11 +49,11 @@ body {
 }
 .label {
   display: flex;
-  flex-direction: row-reverse;
-  margin-right: 95%;
+
+  margin-right: 85%;
   /* padding: 10px; */
   color: red;
 }
 .input {
-  margin-right: 10px;
+  /* margin-right: 40px; */
 }

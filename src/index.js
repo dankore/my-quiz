@@ -42,18 +42,13 @@ const show = () => {
   questionsHolder.innerText = eachBundle[currentIndex].question;
 
   eachBundle[currentIndex].options.forEach(option => {
-    const button = document.createElement("input");
-    button.type = "checkbox";
-    button.id = "options";
-    const label = document.createElement("div");
-    label.htmlFor = "options";
-    label.appendChild(document.createTextNode(option.text));
-    label.classList.add("label");
+    const button = document.createElement("button");
+    button.innerText = option.text;
 
     button.classList.add("btn");
     button.classList.add("input");
-    label.appendChild(button);
-    optionsHolder.appendChild(label);
+
+    optionsHolder.appendChild(button);
 
     button.addEventListener("click", () => {
       const answer = option.correct;
